@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "xo_test_mod",
+	"version": "${version}",
+	"name": "Test mod",
+	"description": "Testing mod by X/O",
+	"authors": [
+		"Me!"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/test/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.xo.xo_test_mod.XoTestMod"
+		],
+		"client": [
+			"net.xo.xo_test_mod.XoTestModClient"
+		],
+		"fabric-datagen": [
+			"net.xo.xo_test_mod.XoTestModDataGenerator"
+		]
+	},
+	"mixins": [
+		"test.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.14.22",
+		"minecraft": "~1.20",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
